@@ -113,6 +113,10 @@ func (ic *instanceCmd) commonParam() *url.Values {
 
 	ic.qyAccessKeyId = viper.GetString("qy_access_key_id")
 	ic.qySecretAccessKey = viper.GetString("qy_secret_access_key")
+	if len(ic.qyAccessKeyId) == 0 || len(ic.qySecretAccessKey) == 0 {
+		fmt.Println("Must specified config file with --config flag or create a .qingcloud.yaml in $HOME directory.")
+		os.Exit(1)
+	}
 	val.Add("access_key_id", ic.qyAccessKeyId)
 
 	ic.version = "1"

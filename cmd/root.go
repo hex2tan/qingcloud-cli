@@ -39,6 +39,7 @@ func init() {
 
 	rootCmd.AddCommand(versionCmd)
 	rootCmd.AddCommand(completionCmd)
+	rootCmd.AddCommand(echoDemoCmd)
 	addInstanceCmd(rootCmd)
 }
 
@@ -70,8 +71,8 @@ func initConfig() {
 	viper.AutomaticEnv()
 
 	if err := viper.ReadInConfig(); err != nil {
-		fmt.Println("Using config file:", viper.ConfigFileUsed(), err)
-		fmt.Println("Must specified config file with --config flag or create a .qingcloud.yaml in $HOME directory.")
-		os.Exit(1)
+		//fmt.Println("Using config file:", viper.ConfigFileUsed(), err)
+		//fmt.Println("Must specified config file with --config flag or create a .qingcloud.yaml in $HOME directory.")
+		//os.Exit(1)
 	}
 }
