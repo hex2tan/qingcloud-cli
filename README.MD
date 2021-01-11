@@ -26,6 +26,8 @@ cd qingcloud-cli
 go install
 ```
 
+*注意：如果系统变量PATH不包含GOPATH，请自行添加。*
+
 ## 开启自动补全
 执行以下命令后，再重新开启一个新的bash则可。
 ```bash
