@@ -13,8 +13,8 @@
 - 部分参数值可选合法参数补全
 - 部分参数值动态补全, TerminateInstances 的--instances参数支持动态补全
 
-![img](https://github.com/hex2tan/qingcloud-cli/demo/termiante.gif)
-![img](https://github.com/hex2tan/qingcloud-cli/demo/misc.gif)
+![img](https://github.com/hex2tan/qingcloud-cli/blob/master/demo/termiante.gif)
+![img](https://github.com/hex2tan/qingcloud-cli/blod/master/demo/misc.gif)
 
 
 # 安装
