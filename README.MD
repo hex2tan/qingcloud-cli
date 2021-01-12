@@ -39,18 +39,18 @@ qingcloud-cli completion bash > /etc/bash_completion.d/qingcloud-cli
 ```
 
 ## 配置文件
-将 $HOME/src/qingcloud-cli/example.yaml 里的 access_key_id及secret_access_key替换成自己的id和key。
+首次配置时，使用以下命令生成配置文件
+```bash
+qingcloud-cli echo-demo-config > $HOME/.qingcloud.yaml
+```
+
+然后将配置文件里的 access_key_id及secret_access_key替换成自己的id和key。
 ```
 access_key_id : 'QYACCESSKEYIDEXAMPLE'
 secret_access_key : 'SECRETACCESSKEY'
 ```
 [如何获取青云access_key以access_id。](https://docs.qingcloud.com/product/api/common/signature.html#api-%E5%AF%86%E9%92%A5%E7%AD%BE%E5%90%8D)
 
-请放在$HOME目录下，文件名为.qingcloud.yaml
-```bash
-cd $HOME/src/qingcloud-cli/
-cat example.yaml > $HOME/.qingcloud.yaml
-```
 
 # 设计相关
 - 基于[cobra](https://github.com/spf13/cobra) 库进行开发
