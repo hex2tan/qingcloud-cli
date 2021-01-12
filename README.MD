@@ -32,7 +32,19 @@ go install
 *注意：如果系统变量PATH不包含GOPATH，请自行添加。*
 
 ## 开启自动补全
-系统先安装 bash-completion 包，并启用， 相关操作方法自行Google。
+系统先安装 bash-completion 包，其他发行版本的操作方法自行Google。
+### CentOS参考
+
+```bash
+yum install -y bash-completion bash-completion-extras
+```
+
+### Ubuntu参考
+
+```bash
+apt install bash-completion
+```
+
 执行以下命令后，再重新开启一个新的bash则可。
 ```bash
 qingcloud-cli completion bash > /etc/bash_completion.d/qingcloud-cli
