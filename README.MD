@@ -19,7 +19,6 @@
 
 # 安装
 ## Linux 平台
-系统先安装 completion-bash 包，安装方法自行Google。
 如果已经安装，可略过。 Go版本1.14以上。
 
 ```bash
@@ -33,6 +32,7 @@ go install
 *注意：如果系统变量PATH不包含GOPATH，请自行添加。*
 
 ## 开启自动补全
+系统先安装 bash-completion 包，并启用， 相关操作方法自行Google。
 执行以下命令后，再重新开启一个新的bash则可。
 ```bash
 qingcloud-cli completion bash > /etc/bash_completion.d/qingcloud-cli
